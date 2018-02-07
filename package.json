@@ -1,0 +1,29 @@
+{
+  "name": "bibleapi",
+  "version": "1.0.0",
+  "description": "A web API for the Bible",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WinstonMarvel/bibleAPI.git"
+  },
+  "keywords": [
+    "bible",
+    "webapi",
+    "kjv",
+    "niv",
+    "jesus"
+  ],
+  "author": "Winston Marvel Jude",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WinstonMarvel/bibleAPI/issues"
+  },
+  "homepage": "https://github.com/WinstonMarvel/bibleAPI#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
