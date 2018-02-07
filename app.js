@@ -7,6 +7,10 @@ const requestParser = require("./requestParser.js");
 app.get("/:book/:chapter/:verse", requestParser.process);
 app.get("/:book/:chapter", requestParser.process);
 
+app.get("/:book/", (req,res)=>{
+	res.json({'success' : false, 'errorCode' : 'Cannot Return Full Book, please specify Chapter and Verse'});
+});
+
 app.get("*", (req,res)=>{
 	res.send("Incorrect format. Sorry please read the documentation.");
 });
