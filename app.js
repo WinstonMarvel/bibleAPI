@@ -23,10 +23,7 @@ app.listen(3000);
 
 
 //To do
-	//Add Middleware function to process request:
-		// Bookname in camel case always
-		// Check !hasOwnProperty and return the appropriate response
-		// Error Handler
+	// Add hasNextVerse=true and hasNextChapter to JSON Response
 
 
 
