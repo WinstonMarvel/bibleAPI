@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 
+
 const requestParser = require("./requestParser.js");
 
 app.get("/:book/:chapter/:verse", requestParser.process);
@@ -26,3 +27,22 @@ app.listen(3000);
 		// Bookname in camel case always
 		// Check !hasOwnProperty and return the appropriate response
 		// Error Handler
+
+
+
+
+//Functioning
+	/*
+	Case 1: /booklegitimate/chapleg/verselegitimate
+		return json
+
+	Case 2: /bookincorrect/chapincorrect/verseincorrect
+		return json with error code	
+
+
+
+
+
+
+
+	*/
