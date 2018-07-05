@@ -11,9 +11,9 @@ It's far from perfect. But here's how you use it:
   ```javascript 
     npm-install
   ```
-* Install dependencies
+* Run it
   ```javascript 
-    npm-install
+    node app.js
   ```
 * Send a GET Request to the host with `/api/` followed by the chapter and optionally the verse. Example:\
   Sending a GET request to `http://localhost:3000/api/psalm/23` should return the chapter in JSON
