@@ -24,7 +24,7 @@ app.listen(3000);
 
 //To do
 	// Add hasNextVerse=true and hasNextChapter to JSON Response
-
+	// Use Object.keys or for..in loop to show full chapter list.
 
 
 
