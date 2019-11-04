@@ -1,20 +1,15 @@
-const bible = require("./bibles/MSG.json");
+import * as bible from './bibles/MSG.json';
+import * as express from 'express';
+import camelCasify from './utilities';
 
-const express = require("express");
 
-const fixBookName = function(str){
-	var firstLetter = str.charAt(0);
-	var remainingString = str.slice(1);
-	return firstLetter.toUpperCase() + remainingString.toLowerCase();
-}
-
-var processor = function(req, res){
-	let responseJSON = {};
+var processor = function(req: any, res: any){
+	let responseJSON = <any> {};
 	responseJSON.success = false;
-	let error = {};
+	let error = <any>{}; 
 	try{
 		
-		var requestedBook = fixBookName(req.params.book), 
+		var requestedBook = camelCasify(req.params.book), 
 							requestedChapter = req.params.chapter, 
 							requestedVerse = req.params.verse || 1;
 		
@@ -68,4 +63,4 @@ var processor = function(req, res){
 
 
 
-module.exports.process = processor; 
+export default processor;
